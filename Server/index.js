@@ -7,7 +7,7 @@ const Todomodel = require("./models/todo");
 var app = express();
 app.use(cors());
 app.use(express.json());
-
+const port=process.env.PORT||3001;
 mongoose.connect(
   "mongodb+srv://mohanraj08022004:Mohanraj%40123@spidey7.3vmmauu.mongodb.net/?retryWrites=true&w=majority"
 );
@@ -40,7 +40,7 @@ app.post("/add", (req, res) => {
     .then((todo) => res.json(todo))
     .catch((err) => res.json(err));
 });
-app.listen(3001, () => {
+app.listen(port, () => {
   console.log(Date());
   console.log("Server is Running");
 });
