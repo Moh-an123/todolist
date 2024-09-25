@@ -8,7 +8,7 @@ const Home = () => {
   const [todos, settodos] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/get")
+      .get("https://todolist-tew6.onrender.com/get")
       .then((result) => {
         settodos(result.data);
       })
@@ -19,7 +19,7 @@ const Home = () => {
   const handlecheck = (id) => {
     setChck(!chck);
     axios
-      .put("http://localhost:3001/update/" + id)
+      .put("https://todolist-tew6.onrender.com/update/" + id)
       .then((result) => {
         console.log(result);
       })
@@ -31,7 +31,7 @@ const Home = () => {
     setChck(!chck);
     console.log("delete");
     axios
-      .delete("http://localhost:3001/delete/" + id)
+      .delete("https://todolist-tew6.onrender.com/delete/" + id)
       .then((result) => {
         console.log(result);
       })
