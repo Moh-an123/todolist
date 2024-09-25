@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,700;1,300;1,400&family=Protest+Riot&display=swap');
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Kanit', sans-serif;
+font-family: 'Protest Riot', sans-serif;
+}
+.list{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  column-gap: 20px;
+  margin: 10px 0;
+  background-color: rgb(66, 96, 86);
+  width:max-content;
+  border-radius:22px ;
+}
+.main{
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  margin-bottom: .5rem;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 136, 0);
+}
+h2{
+margin: 0;
+padding: 0;
+}
+.delete{
+  width: 25px;
+  height: 25px;
+  
+  margin-right: 10px;
+}
+.circle{
+  width: 22px;
+  height: 22px;
+  
+  margin-left: 10px;
+}
+.todo{
+  min-width: 13rem;
+  text-align: center;
+}
+.todo.underline{
+  min-width: 13rem;
+  text-align: center;
+  text-decoration:line-through;
+}
+.inp{
+ width: 15rem; 
+ margin-bottom: .5rem;
+ padding: .3rem;
+ font-size: 1.3rem;
+ border-color: rgb(252, 143, 0);
+  border-radius: 1rem;
+  text-align: center;
+  font-family:  'Kanit', sans-serif;
+&:focus{
+  outline: none;
+  border: 2px solid;
+  border-color: rgb(253, 230, 95);
+  }
+}
+.btn{
+  width: 5rem;
+  padding: .5rem;
+  background: #fd2b2b;
+  border: none;
+  border-radius: 22px;
+  font-family:  'Kanit', sans-serif;
+  &:hover{
+    background: #1f80ff;
+    &:focus{
+      outline: 2px solid rgb(0, 0, 0);
+      color: #fff;
+    }
+  }
+}
